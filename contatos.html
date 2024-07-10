@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contatos-style.css">
 </head>
+
 <body>
-    
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3">Logo da Empresa</h1>
+            <nav class="d-none d-md-flex">
+                <a href="index.html" class="text-white mx-2">Home Page</a>
+                <a href="quemsomos.html" class="text-white mx-2">Quem Somos</a>
+                <a href="produtos.html" class="text-white mx-2">Produtos</a>
+                <a href="servicos.html" class="text-white mx-2">Serviços</a>
+                <a href="trabalhe.html" class="text-white mx-2">Trabalhe Conosco</a>
+                <a href="contatos.html" class="text-white mx-2">Contatos</a>
+            </nav>
+            <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </header>
+    <nav class="collapse d-md-none bg-primary" id="navbarNav">
+        <div class="container">
+            <a href="index.html" class="text-white d-block py-2">Home Page</a>
+            <a href="quemsomos.html" class="text-white d-block py-2">Quem Somos</a>
+            <a href="produtos.html" class="text-white d-block py-2">Produtos</a>
+            <a href="servicos.html" class="text-white d-block py-2">Serviços</a>
+            <a href="trabalhe.html" class="text-white d-block py-2">Trabalhe Conosco</a>
+            <a href="contatos.html" class="text-white d-block py-2">Contatos</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <div class="container my-5">
+        <h1 class="text-center">Contatos</h1>
+        <p><strong>Objetivo:</strong> Fornecer informações claras e acessíveis para que os clientes possam entrar em
+            contato com a empresa.</p>
+
+        <h3>Conteúdo:</h3>
+        <ol>
+            <li>Formulário de contato: Formulário simples para os visitantes enviarem mensagens diretamente pelo site.</li>
+            <li>Informações de contato: Endereço físico, número de telefone, e-mail e horários de funcionamento.</li>
+            <li>Mapa de localização: Mapa interativo mostrando a localização da empresa.</li>
+            <li>Links para redes sociais: Ícones e links para as páginas da empresa nas redes sociais.</li>
+        </ol>
+    </div>
+
+    <!-- Formulário de Contato -->
+    <div class="container my-5">
+        <h2 class="text-center">Entre em Contato</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Mapa de Localização -->
+    <div class="container my-5">
+        <h2 class="text-center">Nossa Localização</h2>
+        <div id="mapa" style="height: 400px;"></div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Sitename. Todos os direitos reservados.</p>
+            <p><a href="privacidade.html" class="text-white">Política de Privacidade</a> | <a href="termos.html"
+                    class="text-white">Termos de Uso</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap e jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Inicialização do mapa (usando um exemplo genérico)
+        function initMap() {
+            var location = { lat: -25.344, lng: 131.036 };
+            var map = new google.maps.Map(document.getElementById('mapa'), {
+                zoom: 10,
+                center: location
+            });
+            var marker = new google.maps.Marker({ position: location, map: map });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
+
 </html>
