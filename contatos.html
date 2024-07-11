@@ -41,15 +41,24 @@
     <!-- Conteúdo principal da página -->
     <div class="container my-5">
         <h1 class="text-center">Contatos</h1>
-        <p><strong>Objetivo:</strong> Fornecer informações claras e acessíveis para que os clientes possam entrar em
-            contato com a empresa.</p>
+        <p><strong>Vem ficar sabendo de tudo em primeira mão!</strong></p>
 
-        <h3>Conteúdo:</h3>
-        <ol>
-            <li>Formulário de contato: Formulário simples para os visitantes enviarem mensagens diretamente pelo site.</li>
-            <li>Informações de contato: Endereço físico, número de telefone, e-mail e horários de funcionamento.</li>
-            <li>Mapa de localização: Mapa interativo mostrando a localização da empresa.</li>
-            <li>Links para redes sociais: Ícones e links para as páginas da empresa nas redes sociais.</li>
+            <ul>
+                <img src="images/icon-facebook.png" alt="facebook icon"/>
+                    <a href="#" target="_blank">Facebook</a>
+            </ul>
+            
+            <ul>
+                <img src="images/icon-instagram.png" alt="facebook icon"/>
+                    <a href="#" target="_blank">Instagram</a>
+            </ul>
+
+            <ul>
+                <img src="images/icons-linkedin.png" alt="facebook icon"/>
+                    <a href="#" target="_blank">LinkedIn</a>
+            </ul>
+
+
         </ol>
     </div>
 
@@ -95,17 +104,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Inicialização do mapa (usando um exemplo genérico)
+        // Inicialização do mapa com a localização correta
         function initMap() {
-            var location = { lat: -25.344, lng: 131.036 };
+            var location = { lat: -3.7523463911900556, lng: -38.58225631702659 };
             var map = new google.maps.Map(document.getElementById('mapa'), {
-                zoom: 10,
+                zoom: 16,
                 center: location
             });
-            var marker = new google.maps.Marker({ position: location, map: map });
+            var marker = new google.maps.Marker({ position: location, map: map, title: 'Cuca Pici, Fortaleza - CE' });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjw9hZUHfiv-NOFQL-CByrheI3gRjamvA&callback=initMap"></script>
+
+    <!--
+    <gmp-map center="-3.7522072153129873, -38.5823206900436" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="-3.7522072153129873, -38.58232069004136" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+-->
 </body>
 
 </html>
