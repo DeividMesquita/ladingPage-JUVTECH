@@ -234,25 +234,36 @@
 
     <footer id="footer">
         <p>Automatech &copy; <span id="year"></span></p>
-        <div>
-            <a href="https://www.linkedin.com/in/deividson-mesquita-0b049323b/" target="_blank">
-                <img src="img/linkedin.png" alt="Linkedin">
-            </a>
-            <a href="https://github.com/DeividMesquita" target="_blank">
-                <img src="img/github.png" alt="GitHub">
-            </a>
-        </div>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/deividson-mesquita-0b049323b/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn"> Deividson Mesquita
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/DeividMesquita" target="_blank">
+                    <img src="img/github.png" alt="GitHub"> DeividMesquita
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/vivianepg/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn"> Viviane Gomes
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/vividiness" target="_blank">
+                    <img src="img/github.png" alt="GitHub"> Vividiness
+                </a>
+            </li>
+        </ul>
     </footer>
+    
     
     <script>
         
         document.getElementById("year").textContent = new Date().getFullYear();
-        
-        
-        document.querySelectorAll('footer a').forEach(link => {
-            link.setAttribute('target', '_blank');
-        });
     </script>
+    
     
 
 </body>

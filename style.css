@@ -265,20 +265,28 @@ footer {
     width: 100%;
 }
 
-footer div {
+footer .social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-top: 10px;
 }
 
-footer div a {
-    margin: 0 10px;
+footer .social-links li {
     display: inline-block;
-    width: 30px;
-    height: 30px;
 }
 
-footer div a img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+footer .social-links li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
+footer .social-links li img {
+    width: 20px;
+    height: 20px;
+}
