@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo-link img {
+    max-width: 200px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #888;
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.team-member p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .team-member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .team-member img {
+        margin-bottom: 10px;
+    }
+}
+
+.produto-item {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.produto-item h3 {
+    margin-top: 10px;
+}
+
+.produto-item p {
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #666;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #888;
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlight {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight:hover {
+    transform: translateY(-5px);
+}
+
+.highlight img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.highlight h3 {
+    margin-top: 10px;
+}
+
+.highlight p {
+    margin-bottom: 15px;
+}
+
+.highlight ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.highlight ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+.comentario {
+    background-color: #f9f9f9;
+    border-left: 4px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vaga {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.vaga h4 {
+    margin-bottom: 10px;
+}
+
+.beneficios {
+    list-style-type: none;
+    padding: 0;
+}
+
+.beneficios li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+form input[type="submit"]:hover {
+    background-color: #888;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer div a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+footer div a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
