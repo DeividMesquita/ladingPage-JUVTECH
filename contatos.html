@@ -11,9 +11,10 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header class="bg-primary text-white py-3">
+    <header class="bg-dark text-white py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="h3">Logo da Empresa</h1>
+            <a href="images/logofuturos.png">
             <nav class="d-none d-md-flex">
                 <a href="index.html" class="text-white mx-2">Home Page</a>
                 <a href="quemsomos.html" class="text-white mx-2">Quem Somos</a>
@@ -29,7 +30,7 @@
     </header>
     <nav class="collapse d-md-none bg-primary" id="navbarNav">
         <div class="container">
-            <a href="index.html" class="text-white d-block py-2">Home Page</a>
+            <a href="index.html" class="text-white d-block py-2">Página    Inicial</a>
             <a href="quemsomos.html" class="text-white d-block py-2">Quem Somos</a>
             <a href="produtos.html" class="text-white d-block py-2">Produtos</a>
             <a href="servicos.html" class="text-white d-block py-2">Serviços</a>
@@ -87,7 +88,7 @@
     <!-- Mapa de Localização -->
     <div class="container my-5">
         <h2 class="text-center">Nossa Localização</h2>
-        <div id="mapa" style="height: 400px;"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.264269539176!2d-38.58486342412466!3d-3.752533743297256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74b01a5298f0b%3A0xa4e309b31696e9aa!2sCUCA%20Pici!5e0!3m2!1spt-BR!2sbr!4v1721411524365!5m2!1spt-BR!2sbr" width="1150" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Rodapé -->
@@ -98,29 +99,5 @@
                     class="text-white">Termos de Uso</a></p>
         </div>
     </footer>
-
-    <!-- Scripts Bootstrap e jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Inicialização do mapa com a localização correta
-        function initMap() {
-            var location = { lat: -3.7523463911900556, lng: -38.58225631702659 };
-            var map = new google.maps.Map(document.getElementById('mapa'), {
-                zoom: 16,
-                center: location
-            });
-            var marker = new google.maps.Marker({ position: location, map: map, title: 'Cuca Pici, Fortaleza - CE' });
-        }
-    </script>
-     <script async defer src="https://maps.googleapis.com/maps/api/js?key=MY_KEY&callback=initMap"></script>
-
-    <!--
-    <gmp-map center="-3.7522072153129873, -38.5823206900436" zoom="14" map-id="DEMO_MAP_ID">
-      <gmp-advanced-marker position="-3.7522072153129873, -38.58232069004136" title="My location"></gmp-advanced-marker>
-    </gmp-map>
--->
 </body>
-
 </html>
